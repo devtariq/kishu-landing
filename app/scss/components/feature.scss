@@ -1,0 +1,19 @@
+.feature-sec {
+	position: relative;
+	padding: 50px 0px;
+	max-height: 700px;
+	overflow: hidden;
+	.swiper-slide{
+		background: $white;
+	}
+		.feat-media {
+			padding: 60px;
+		}
+}
+.feat-txt{
+	max-width: 400px;
+	margin: 0 auto;
+	h3{
+		font-size: 50px;
+	}
+}

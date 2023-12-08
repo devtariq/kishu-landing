@@ -1,0 +1,26 @@
+.post-entry{
+	@include media-breakpoint-down(md){
+		margin-bottom: 30px;
+	}
+	.entry-media {
+			padding: 130px 0;
+			background-size: cover;
+			background-repeat: no-repeat;
+			@include media-breakpoint-only(md) {
+				padding: 68px 0;
+			}
+		}
+	
+		.entry-txt {
+			padding: 0 30px 30px;
+			@include media-breakpoint-only(md) {
+					padding: 15px;
+				}
+			h3 {
+				margin-bottom: 15px;
+			}
+		}
+}
+.news-sec{
+	padding-bottom: 150px;
+}

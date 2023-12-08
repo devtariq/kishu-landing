@@ -1,0 +1,26 @@
+.partners-sec{
+	.sec-intro{
+		max-width: 450px;
+		.mute-heading{
+			margin-left: -100px;
+			@include media-breakpoint-down(lg) {
+					margin-left: 0;
+				}
+		}
+		span.h3.mb-5 {
+				padding: 0 0 10px;
+			}
+	}
+}
+.partners-logo {
+	a {
+		background-color: $white;
+		padding: 30px;
+		flex: 0 0 28.33%;
+		margin-right: 5%;
+		border-radius: 30px;
+		background-color: #fff;
+		box-shadow: 1px 1px 59px 0 rgba(61, 0, 111, 0.1);
+
+	}
+}

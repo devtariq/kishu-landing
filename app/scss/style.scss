@@ -1,0 +1,141 @@
+/*********************************************************************************
+
+	Template Name: RideNexa - Ride Sharing Bootstrap5 Template
+	Description: A perfect Template For Ride / Car Share. It comes with nice and clean design.
+
+	Note: This is style css (Sass).
+
+**********************************************************************************/
+
+
+
+// IMPORT BASE
+@import 'bs-custom';
+@import 'mixins';
+@import 'typography';
+@import 'theme';
+
+// IMPORT  COMPONENT 
+
+// IMPORT THE SECTIONS 
+@import 'header';
+@import 'footer';
+@import './components/banner.scss';
+@import './components/feature.scss';
+@import './components/post.scss';
+@import './components/step.scss';
+@import './components/partners';
+
+// 
+
+.swap-sec {
+	padding-bottom: 150px;
+	.swap-media {
+		padding: 40px 0;
+		background-size: contain;
+	}
+}
+
+.phase-card {
+	padding-left: 120px;
+	position: relative;
+	.phase {
+		transform: rotate(-90deg);
+		position: absolute;
+		left: -120px;
+		top: 150px;
+
+	}
+
+	.phase-label {
+
+		font-family: Poppins, sans-serif;
+		color: #dfdfff;
+		font-size: 4.69em;
+		line-height: 135px;
+		font-weight: 400;
+		text-transform: uppercase;
+	}
+
+	span {
+		margin-top: 10px;
+		margin-bottom: 10px;
+		font-family: Poppins, sans-serif;
+		color: $success;
+		font-size: 0.78em;
+		line-height: 21px;
+		font-weight: 700;
+		text-transform: uppercase;
+
+	}
+
+	h3 {
+		font-size: 3.13em;
+		font-weight: 400;
+		margin: 20px 0 30px;
+	}
+
+	ul {
+		@include list-clear;
+		padding-left: 45px;
+
+		li {
+			@extend .overly;
+			margin-bottom: 15px;
+
+			&::before {
+				background: url('../images/checkmark-green.svg')no-repeat left center;
+				left: -45px;
+			}
+		}
+	}
+}
+
+.faq-wrap {
+	.acc-item{
+		margin-bottom: 20px;
+		background-color: $white;
+		@include border-radius(30px);
+		border: 0 none;
+		a{
+			@include border-radius(30px);
+			padding: 20px 30px;
+			background-color: $white;
+			box-shadow: none;
+			@extend .h4;
+		}
+	}
+}
+.accordion-item:first-of-type .accordion-button {
+	border-top-left-radius: 30px;
+	border-top-right-radius: 30px;
+}
+.team-media.bg-cover {
+	background-size: contain;
+}
+
+.sleeping-kishu {
+	position: absolute;
+	left: -20%;
+	right: 0;
+	top: -42%;
+	width: 30em;
+	@include media-breakpoint-only(md) {
+		top: -94%;
+	}
+}
+.brands-wrap a {
+	flex: 0 0 27%;
+	margin-bottom: 30px;
+	@include media-breakpoint-down(md){
+		flex: 0 0 100%;
+		display: block;
+		margin-bottom: 50px;
+		img{
+			width: 250px;
+		}
+	}
+}
+.donate-sec{
+	background-position:  0 120px;
+}

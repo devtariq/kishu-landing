@@ -1,0 +1,2 @@
+var mySwiper=new Swiper(".swiper-container",{loop:!0,mousewheel:{enabled:!0},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"},on:{reachEnd:function(){mySwiper.mousewheel.disable()}}});const phaseSlide=new Swiper(".phaseSlide",{breakpoints:{640:{slidesPerView:1},1024:{slidesPerView:2}}});
+//# sourceMappingURL=custom.js.map

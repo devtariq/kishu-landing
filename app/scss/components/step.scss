@@ -1,0 +1,69 @@
+.step-wrap {
+	.nav-tabs {
+		border: 0;
+		display: block;
+		text-align: center;
+
+		li {
+			display: inline-block;
+			border: 0 none;
+			margin-right: 10px;
+			.nav-link {
+				font-size: 14px;
+				font-weight: 700;
+				text-transform: uppercase;
+				font-family: $heading-font;
+				padding: 10px 30px;
+				color: $headings-color;
+				border: 0 none;
+				margin-bottom: 0;
+				@extend .overly;
+				&::before{
+					height: 3px;
+					background-color: $headings-color;
+					top: 100%;
+					width: 50%;
+					@include transition();
+					@include opacity(0);
+				}
+				@include transition();
+				&.active,&:hover,
+				&.show {
+					background-color: transparent;
+					border: 0 none;
+					border-color: transparent;
+					box-shadow: none;
+					
+				}
+				&.active::before,&:hover::before{
+					width: 100%;
+					@include opacity(1);
+				}
+			}
+
+		}
+	}
+}
+
+.step-item {
+	span.count {
+		background: url('../images/step.png')no-repeat center center / contain;
+		padding: 15px;
+		color: $white;
+		position: static;
+		left: 0%;
+		top: 0%;
+		right: 0%;
+		bottom: 0%;
+		-webkit-transform: rotate(6.13deg);
+		-ms-transform: rotate(6.13deg);
+		transform: rotate(6.13deg);
+		font-family: $body-font;
+		color: #fff;
+		font-size: 1.82em;
+		line-height: 1.46em;
+		text-align: center;
+		font-weight: 600;
+
+	}
+}
